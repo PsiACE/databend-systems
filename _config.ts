@@ -7,6 +7,7 @@ import highlighting from "./www/_plugins/highlighting.ts";
 
 const site = lume({
     includes: "www/_includes",
+    location: new URL("https://databend.systems"),
 });
 
 site.loadPages([".html"])
