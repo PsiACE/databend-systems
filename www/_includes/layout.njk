@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{{ title | d("Databend Systems") | safe }}</title>
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    {# <link href="https://fonts.bunny.net/css?family=literata:400,400i,700,700i|merriweather-sans:400,400i,700,700i" rel="stylesheet" /> #}
+    <link rel="stylesheet" href="https://unpkg.com/missing.css@1.0.12/dist/missing.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/missing.css@1.0.12/dist/missing-prism.min.css">
+    <style>
+    @font-face {
+        font-family: "Chicago FLF";
+        src: url("/fonts/ChicagoFLF.ttf") format("truetype");
+    }
+
+    @font-face {
+        font-family: "Yrsa";
+        src: url("/fonts/Yrsa-Regular.ttf") format("truetype");
+        size-adjust: 125%;
+    }
+    @font-face {
+        font-family: "Yrsa";
+        font-weight: bold;
+        src: url("/fonts/Yrsa-Bold.ttf") format("truetype");
+        size-adjust: 125%;
+    }
+    @font-face {
+        font-family: "Yrsa";
+        font-style: italic;
+        src: url("/fonts/Yrsa-Italic.ttf") format("truetype");
+        size-adjust: 125%;
+    }
+    @font-face {
+        font-family: "Yrsa";
+        font-weight: bold;
+        font-style: italic;
+        src: url("/fonts/Yrsa-BoldItalic.ttf") format("truetype");
+        size-adjust: 125%;
+    }
+
+    :root {
+        --main-font: "Yrsa", serif;
+        --secondary-font: sans-serif;
+        --display-font: "Chicago FLF", "Impact", "Oswald", sans-serif;
+        --mono-font: "Iosevka", "Liberation Mono", "Victor Mono", "Consolas", monospace, monospace;
+
+        --rhythm: 1.5rem;
+        --line-length: 41em;
+
+        font-size: calc((18 / 16) * 100%);
+    }
+
+    @media (max-width: calc(
+        3 * /* arbitrary coefficient */
+        14ch + /* longest word: programmatically*/
+        2 * 1.6rem /* page margins */
+    )) {
+        :root {
+            hyphens: auto;
+            -webkit-hyphens: auto; /* safari :( */
+        }
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: normal;
+        font-family: var(--display-font);
+    }
+
+    :is(h1, h2, h3, h4, h5, h6) code {
+        font-family: inherit;
+    }
+
+    sub-title, .sub-title {
+        color: var(--faded-fg);
+    }
+
+    .asciiart {
+        line-height: 1;
+    }
+
+    /* #region should be added to missingcss native */
+
+    /*temp missing.css fix*/
+    :is(small, .\<small\>) *, aside *, footer * { --gap: inherit }
+
+    h1 { font-size: 2.5em }
+
+    body > header { border-block-end: 1px dotted var(--muted-fg) }
+    body > footer { border-block-start: none }
+
+    figure {
+        display: block;
+        background: none;
+        border: none;
+        padding: 0 var(--gap);
+    }
+    figure>* { --density: .5 }
+    figcaption { font-size: .8em; line-height: calc(var(--rhythm) * 3 / 4); }
+    figcaption:first-child { border-block-end: 1px solid var(--faded-fg) }
+    figcaption:last-child { border-block-start: 1px solid var(--faded-fg) }
+
+    table tr:not(:last-child) > * {
+        padding-bottom: var(--rhythm);
+    }
+
+    .iconbutton { box-shadow: none !important; }
+
+    .text-align\:end { text-align: end }
+
+    aside {
+        font-size: .8em;
+        line-height: calc(var(--rhythm)*3/4);
+        --gap: calc(var(--rhythm) * var(--density) * 3 / 4);
+        border-block: 1px solid var(--graphical-fg);
+        padding-block: var(--gap);
+        margin-block: calc(var(--gap)*4/3);
+    }
+
+    /* #endregion */
+
+    header, footer, summary, button, input, small, .\<small\>, aside, figcaption, .secondary-font { font-variation-settings: "opsz" 7 }
+    pre { line-height: calc(var(--rhythm) * 3 / 4) }
+    
+    @media (prefers-color-scheme: dark) {
+        img[src*="/images/diagram"] { filter: invert(1) }
+    }
+
+    /* #region Asciidoc */
+    
+    .colist {
+        counter-reset: colist;
+        font-size: .8em;
+        line-height: calc(var(--rhythm) * 3 / 4);
+        font-variation-settings: "opsz" 8;
+    }
+
+    aside .colist {
+        font-size: inherit;
+        line-height: inherit;
+    }
+
+    .colist li {
+        counter-increment: colist;
+        margin-inline-start: 1.2ch;
+    }
+
+    .colist li::marker {
+        content: "(" counter(colist) ") ";
+        font-family: var(--mono-font);
+    }
+    /* #endregion */
+    </style>
+    {{ content | safe }}

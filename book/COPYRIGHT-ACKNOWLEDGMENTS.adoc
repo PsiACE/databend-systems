@@ -1,0 +1,37 @@
+= Copyright & Acknowledgments
+:tags: frontmatter
+:!toc:
+:chapter: -a
+:layout: frontmatter.njk
+:url: /book/copyright-acknowledgments/
+
+[.allcaps.massivetext.display-font.italic,role="text-align:center"]
+Databend Systems
+
+[.cite.block.italic.bold]#Databend Systems#
+(C) 2023 Chojan Shang ( https://github.com/psiace[@PsiACE] )
+
+*CC BY 4.0 Deed:* This work is licensed under the Creative Commons Attribution 4.0 International License.
+To view a copy of this license, visit
+http://creativecommons.org/licenses/by/4.0/
+or send a letter to Creative Commons, PO Box 1866, Mountain View,
+CA 94042, USA.
+
+
+[discrete,role="<h6> bold"]
+== Acknowledgements
+
+Thanks to:
+
+* All contributors to the book: https://github.com/psiace/databend-systems/graphs/contributors,
+* [.cite]#Hypermedia Systems# (https://hypermedia.systems) for their awesome theme, which is licensed under https://opensource.org/licenses/0BSD[Zero-Clause BSD]. 
+
+[discrete,role="<h6> bold"]
+== Colophon
+
+Typefaces: [.cite]#ChicagoFLF# (by Robin Casady, headings), [.cite]#Literata# (by TypeTogether, body text), [.cite]#Iosevka# (by Belleve Invis, code).
+
+Tools: HTML, CSS, Asciidoc (https://asciidoc.org/, markup language), Paged.js (https://pagedjs.org/).
+
+[.secondary-font.f-row,role="justify-content:end"]
+*Next:* link:/book/dedication[Dedication]

@@ -1,0 +1,17 @@
+= Contributing Guide
+:url: /contributing/
+
+- Before starting to write, please open an issue for discussion.
+
+- Use widely accepted terms and abbreviations to ensure that readers are familiar with or able to understand it.
+
+- Important Term Introduction Format
+
+[source,asciidoc]
+----
+Blah Blah Blah _term to introduce_:
+
+Term To Introduce:: Introduction of term blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
+----
+
+- Feel free to leave friendly comments in discussions.

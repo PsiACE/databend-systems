@@ -1,0 +1,74 @@
+---
+layout: layout.njk
+url: /book/contents/
+renderOrder: 1
+---
+
+<style>
+    .Chapter-Num {
+        font-family: var(--display-font);
+        min-width: max-content;
+    }
+
+    .sub-title {
+        display: inline;
+    }
+</style>
+
+<header>
+    <h1>DATABEND SYSTEMS <v-h>&mdash;</v-h> <sub-title>Contents</sub-title></h1>
+
+    <div class="f-row flex-wrap:wrap">
+        <button
+            onclick="
+            if (this.getAttribute(`aria-pressed`) === `true`) {
+                this.setAttribute(`aria-pressed`, false);
+                document.querySelector(`[data-chapters]`).classList.add(`textcolumns`);
+                document.querySelectorAll(`[data-toc]`).forEach(toc => toc.hidden = true);
+            } else {
+                this.setAttribute(`aria-pressed`, true);
+                document.querySelector(`[data-chapters]`).classList.remove(`textcolumns`);
+                document.querySelectorAll(`[data-toc]`).forEach(toc => toc.hidden = false);
+            }            
+            "
+        >Show full table of contents</button>
+    </div>
+</header>
+
+<main>
+    <div data-chapters class="textcolumns flow-gap list-of-links" style="--col-width: 22ch">
+        {% set partnumber = 0 %}
+        {% for chapter in search.pages("chapter!=undefined", "chapter") | data %}
+            {% if chapter.part %}
+            <h2 class="<h4> display-font" style="margin-block:var(--gap)">
+                <a href="/book/{{ chapter.part_url }}">{{ chapter.part }}</a>
+            </h2>
+            {% endif %}
+        <ul role="list">
+            <li class="f-row hoverable" style="break-inside: avoid-column;">
+                {% if chapter.chapter == 0 %}
+                <data class="Chapter-Num">=></data>
+                {% elseif (chapter.chapter | int) > 0 %}
+                <data class="Chapter-Num">{{ chapter.chapter }}</data>
+                {% endif %}
+
+                <div class="f-col packed align-items:start">
+                    <a href="{{ chapter.url }}">{{ chapter.title | safe }}</a>
+
+                    {% from "chapter.njk" import toc with context %}
+                    <div hidden data-toc class="dense">
+                        {{ toc(chapter.asciidoc, url=chapter.url) }}
+                    </dialog>
+                </div>
+            </li>
+        </ul>
+        {% endfor %}
+    </div>
+
+    <a href="/databend-systems">Entire book in one page</a>
+</main>
+
+
+<footer>
+    {% include "global-footer.njk" %}
+</footer>

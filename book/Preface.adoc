@@ -1,0 +1,27 @@
+= Preface
+:url: /book/preface/
+:chapter: -c
+
+While there are already many books on the subject of database systems, whether it be the internals of a specific database or an overview of the entire field of database systems. However, so far, it is rare to see books that extend the architecture of database systems to the cloud, even though people have been discussing cloud(-native) databases for some time.
+
+In Jamie's article footnote:[
+A shallow survey of OLAP and HTAP query engines. https://www.scattered-thoughts.net/writing/a-shallow-survey-of-olap-and-htap-query-engines .], it is mentioned:
+
+[quote,Jamie Brandon, A shallow survey of OLAP and HTAP query engines] 
+____
+The cloud databases are all pretty cagey about how they parallelize  queries. I couldn't figure out anything about Snowflake, Redshift or  SingleStore.
+____
+
+As a cloud database released in 2021, Databend footnote:[
+Databend is a modern cloud data warehouse. https://github.com/datafuselabs/databend/] focuses on the OLAP field and offers massive-scale analytics on object storages. It has open access to its source code and has also launched its own cloud services footnote:[
+Databend Cloud. https://www.databend.com/] . Of course, there is currently no book specifically dedicated to introducing Databend and its philosophy. 
+
+In order to provide objective and insightful content, I have written this book on cloud databases and Databend. Although I am not an expert, I will do my best to address any omissions that may arise. Your assistance in pointing them out would be greatly appreciated.
+
+Now, let's get started with all of this.
+
+*P.S. 1.* _The content of this book has not undergone sufficient review. Additionally, as I am still a member of Databend Labs, please allow me to reserve my praise for it at an appropriate time._
+
+*P.S. 2.* _If you are willing to write a foreword or book review, please feel free to contact me._
+
+_Chojan Shang ( https://github.com/psiace[@PsiACE] ), October 2023_
