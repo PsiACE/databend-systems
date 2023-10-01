@@ -1,6 +1,7 @@
 = Preface
 :url: /book/preface/
 :chapter: -c
+:discuss: giscus
 
 While there are already many books on the subject of database systems, whether it be the internals of a specific database or an overview of the entire field of database systems. However, so far, it is rare to see books that extend the architecture of database systems to the cloud, even though people have been discussing cloud(-native) databases for some time.
 
