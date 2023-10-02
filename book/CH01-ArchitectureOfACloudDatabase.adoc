@@ -1,0 +1,4 @@
+= Architecture Of A Cloud Database
+:chapter: 01
+:url: /cloud-database-architecture/
+:discuss: giscus
