@@ -6,7 +6,7 @@
 [.airy.padding-block]
 --
 
-[.big]_To to our team and open source pioneers._ -- Chojan Shang ( https://github.com/psiace[@PsiACE] )
+[.big]_To our team and open source pioneers._ -- Chojan Shang ( https://github.com/psiace[@PsiACE] )
 --
 
 [.secondary-font.f-row,role="justify-content:end"]
