@@ -22,3 +22,8 @@ ifdef::databend-systems-pdf[]
 toc::[]
 --
 endif::[]
+
+= Cloud Database Concepts
+
+[introduction]
+include::book/CH00-Introduction.adoc[leveloffset=1]
