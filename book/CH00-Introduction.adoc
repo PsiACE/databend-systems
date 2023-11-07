@@ -6,7 +6,7 @@
 :discuss: giscus
 
 Cloud databases have revolutionized the way organizations store, manage, and analyze data. 
-With the advent of cloud computing, a new generation of cloud-native databases has emerged, emphasizing connectivity and broad support for multiple cloud vendors.
+With the popularity of cloud computing, a new generation of cloud-native databases has emerged, emphasizing connectivity and broad support for multiple cloud vendors.
 This introduction provides an overview of cloud databases, their evolution, and the vision of the new generation of cloud databases, including concepts such as sky computing and hybrid on-premises and cloud workloads.
 
 == What is a Cloud Database?
