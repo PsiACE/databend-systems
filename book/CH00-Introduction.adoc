@@ -27,7 +27,7 @@ These databases are developed with the specific intent of capitalizing on the ad
 By taking full advantage of the cloud's functionalities, such as elastic scalability, flexible resource allocation, and seamless integration with other cloud services, 
 cloud-native databases offer organizations enhanced performance, agility, and cost-efficiency.
 
-== Towards Cloud(-native) Database
+== Towards Cloud-native Databases
 
 As organizations increasingly adopt cloud computing, the demand for cloud-native databases has grown.
 
@@ -57,14 +57,14 @@ Throughout the book, we will use Databend as a prominent example to illustrate t
 We will delve into its architecture, capabilities, and how it enables new paradigms in data analysis, including sky computing and hybrid cloud workloads. 
 By combining theoretical knowledge with practical insights, we strive to provide readers with a comprehensive and actionable guide to cloud databases and their applications.
 
-== Connectivity Cloud Database: A New Generation
+== Connectivity Cloud Databases: A New Generation
 
 The latest trends in cloud-native databases, like Databend, 
 emphasize the importance of connectivity and universal support for different cloud service providers. 
 This shift in focus aims to break the barriers that limit cloud databases to a few specific cloud platforms, 
 enabling them to become more interconnected, versatile, and adaptable.
 
-The new generation of cloud databases goes beyond the limitations of single or a few cloud providers. 
+Connectivity cloud databases goes beyond the limitations of single or a few cloud providers. 
 Its vision is to create a unified and seamless environment that allows for easy access and analysis of data across multiple cloud platforms. 
 This includes improved connectivity and integration with various cloud services. 
 These databases are specifically designed to handle hybrid workloads across local on-premises, private cloud, and public cloud environments, 
@@ -73,11 +73,11 @@ As this landscape continues to evolve, organizations must navigate numerous oppo
 
 == Conclusion
 
-In this book, we will explore the advancements, principles, and applications of this new generation of cloud databases. 
-We will delve into architecture, features, and how cloud databases enables organizations to embrace the paradigm of sky computing and leverage the interconnectedness of cloud platforms. 
-By understanding the capabilities and possibilities offered by this new generation of cloud databases, readers will gain insights into how they can harness the power of cloud computing for their data analytics needs.
+In this book, we will explore the advancements, principles, and applications of the new generation of cloud databases. 
+We will delve into architecture, features, and how connectivity cloud databases enables organizations to embrace the paradigm of sky computing and leverage the interconnectedness of cloud platforms. 
+By understanding the capabilities and possibilities offered by connectivity cloud databases, readers will gain insights into how they can harness the power of cloud computing for their data analytics needs.
 
-As we embark on this exploration, we invite you to join us in uncovering the potential of this new generation of cloud databases and the transformative impact they can have on data analysis.
+As we embark on this exploration, we invite you to join us in uncovering the potential of connectivity cloud databases and the transformative impact they can have on data analysis.
 
 NOTE: The content in this book has not undergone extensive research and review. As a founding member of Databend Labs, please understand that my perspective may be biased. We welcome your feedback and contributions to ensure the accuracy and completeness of the information presented.
 
