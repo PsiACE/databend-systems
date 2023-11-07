@@ -3,9 +3,12 @@
 :chapter: -c
 :discuss: giscus
 
-While there are already many books on the subject of database systems, whether it be the internals of a specific database or an overview of the entire field of database systems. However, so far, it is rare to see books that extend the architecture of database systems to the cloud, even though people have been discussing cloud(-native) databases for some time.
+In the vast landscape of database systems literature, numerous books have been written, 
+exploring the intricacies of specific databases or providing comprehensive overviews of the field as a whole. 
+However, the extension of database system architectures to the cloud has remained relatively uncharted territory. 
+Despite ongoing discussions about cloud-native databases, there is a scarcity of books that delve into this domain.
 
-In Jamie's article footnote:[
+In a thought-provoking article by Jamie Brandon footnote:[
 A shallow survey of OLAP and HTAP query engines. https://www.scattered-thoughts.net/writing/a-shallow-survey-of-olap-and-htap-query-engines .], it is mentioned:
 
 [quote,Jamie Brandon, A shallow survey of OLAP and HTAP query engines] 
@@ -13,16 +16,21 @@ ____
 The cloud databases are all pretty cagey about how they parallelize  queries. I couldn't figure out anything about Snowflake, Redshift or  SingleStore.
 ____
 
-As a cloud database released in 2021, Databend footnote:[
-Databend is a modern cloud data warehouse. https://github.com/datafuselabs/databend/] focuses on the OLAP field and offers massive-scale analytics on object storages. It has open access to its source code and has also launched its own cloud services footnote:[
-Databend Cloud. https://www.databend.com/] . Of course, there is currently no book specifically dedicated to introducing Databend and its philosophy. 
+Enter Databend footnote:[Databend is a modern cloud data warehouse. https://github.com/datafuselabs/databend/], 
+a cloud database that emerged in 2021, with a specific focus on the OLAP field and the ability to perform massive-scale analytics on object storages. 
+Databend differentiates itself by providing open access to its source code and even launching its own cloud services footnote:[Databend Cloud. https://www.databend.com/]. 
+Yet, as of now, there is no dedicated book introducing Databend and shedding light on its underlying philosophy.
 
-In order to provide objective and insightful content, I have written this book on cloud databases and Databend. Although I am not an expert, I will do my best to address any omissions that may arise. Your assistance in pointing them out would be greatly appreciated.
+Motivated by the need for objective and insightful content, I have taken it upon myself to write this book on cloud databases, with a primary emphasis on Databend. 
+While I may not be an expert, I am committed to addressing any potential omissions to the best of my ability. 
+I kindly request your assistance in identifying any areas that may require further attention and refinement.
 
-Now, let's get started with all of this.
+Without further ado, let us embark on this journey together.
 
-*P.S. 1.* _The content of this book has not undergone sufficient review. Additionally, as I am still a member of Databend Labs, please allow me to reserve my praise for it at an appropriate time._
+*P.S. 1.* _It is important to note that the content of this book has not undergone extensive review. Additionally, as a current member of Databend Labs, I ask for your understanding in reserving my praise for the appropriate time._
 
-*P.S. 2.* _If you are willing to write a foreword or book review, please feel free to contact me._
+*P.S. 2.* _If you are interested in writing a foreword or providing a book review, I would be thrilled to hear from you. Please feel free to reach out to me._
+
+Thank you for your support and encouragement.
 
 _Chojan Shang ( https://github.com/psiace[@PsiACE] ), October 2023_
