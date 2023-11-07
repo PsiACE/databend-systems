@@ -27,4 +27,3 @@ endif::[]
 
 [introduction]
 include::book/CH00-Introduction.adoc[leveloffset=1]
-include::book/CH01-ArchitectureOfACloudDatabase.adoc[leveloffset=1]
